@@ -1,5 +1,10 @@
 ---
+import "../styles/global.css";
 
+import Navbar from "../components/navbar.astro";
+import ActionArea from "../components/action-area.jsx";
+import { useState } from "react";
+import { Toaster } from "react-hot-toast";
 ---
 
 <html lang="en">
@@ -8,9 +13,30 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Proyecto</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="h-screen w-full flex flex-col font-sans bg-bg">
+		<Navbar />
+		<main class="flex flex-col h-[88vh]">
+			<div class="h-[45%] px-[20%] flex flex-col gap-5 justify-center">
+				<h1 class="text-texto text-7xl font-medium tracking-normal">
+					Entiende tus finanzas con <br /> solo subir un archivo.
+				</h1>
+				<h1
+					class="text-texto2 text-lg text-end tracking-normal leading-6"
+				>
+					Herramienta creada con el apoyo del Banco de la Nación,
+					diseñada <br /> para ayudarte a entender y mejorar tu salud financiera.
+				</h1>
+			</div>
+
+			<ActionArea client:load />
+			<Toaster />
+
+			<div class="h-[10%] text-texto2 text-center">
+				Haciendo click en Analizar esta aceptando los términos y
+				condiciones.
+			</div>
+		</main>
 	</body>
 </html>

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-texto: #000000;
+    --color-texto2: #393939;
+    --color-primary: #C21D03;
+    --color-secondary: #FFB787;
+    --color-bg: #FFFFFF;
+
+    --font-sans: 'Outfit', sans-serif;
+}
+
+#action-button {
+    background: #C21D03;
+    background: linear-gradient(90deg, rgba(194, 29, 3, 1) 0%, rgba(253, 87, 50, 1) 100%);
+}

@@ -1,0 +1,20 @@
+---
+import WorkingPage from "../components/working-page.jsx";
+import "../styles/global.css";
+import Navbar from "../components/navbar.astro";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Proyecto</title>
+    </head>
+    <body class="h-[100dvh] w-full flex flex-col font-sans bg-bg">
+        <Navbar />
+
+        <WorkingPage client:only="react" />
+    </body>
+</html>

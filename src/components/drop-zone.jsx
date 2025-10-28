@@ -8,7 +8,7 @@ import * as XLSX from "xlsx";
 const Dropzone = forwardRef(({ onValidation }, ref) => {
   const fileInputRef = useRef(null);
   const maxAllowedMB = 500;
-  const expectedColumns = ["Nombre", "Edad", "Email"];
+  const expectedColumns = ["Fecha", "Monto", "Descripcion", "Medio de pago", "Moneda"];
 
   const [validationResult, setValidationResult] = useState(null);
   const [selectedFile, setSelectedFile] = useState(null);
@@ -135,14 +135,14 @@ const Dropzone = forwardRef(({ onValidation }, ref) => {
         <FontAwesomeIcon
           icon={faCirclePlus}
           size="4x"
-          className="text-[#C21D03] h-18"
+          className="text-[#213c64] h-18"
         />
 
         <p
           className={`mt-2 ${validationResult === null
             ? "text-gray-600"
             : validationResult
-              ? "text-green-600"
+              ? "text-[#4f984a]"
               : "text-red-600"
             }`}
         >

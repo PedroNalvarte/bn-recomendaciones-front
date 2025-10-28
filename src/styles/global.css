@@ -4,8 +4,8 @@
 @theme {
     --color-texto: #000000;
     --color-texto2: #393939;
-    --color-primary: #C21D03;
-    --color-secondary: #FFB787;
+    --color-primary: #213c64;
+    --color-secondary: #377888;
     --color-bg: #FFFFFF;
 
     --font-sans: 'Outfit', sans-serif;
@@ -13,5 +13,21 @@
 
 #action-button {
     background: #C21D03;
-    background: linear-gradient(90deg, rgba(194, 29, 3, 1) 0%, rgba(253, 87, 50, 1) 100%);
+    background: linear-gradient(90deg, #213c64 0%, #377888 100%);
+}
+
+#action-a {
+    background: #377888;
+}
+
+#action-a {
+    background: #213c64;
+}
+
+#action-a {
+    background: #4f984a;
+}
+
+#action-a {
+    background: #d5ab5d;
 }

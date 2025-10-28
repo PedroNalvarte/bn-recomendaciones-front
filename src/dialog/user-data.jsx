@@ -131,7 +131,7 @@ export default function UserData({ onData }) {
                                 />
                             </div>
 
-                            <p className="text-texto2 text-[12px] mt-5">🔒 La información que registres será almacenada de forma segura por el Banco de la Nación del Perú y utilizada únicamente para estudios pertinentes orientados a mejorar y desarrollar servicios financieros.</p>
+                            <p className="text-texto2 text-[12px] mt-5">🔒 La información que registres será almacenada de forma segura y utilizada únicamente para estudios pertinentes orientados a mejorar y desarrollar servicios financieros.</p>
 
 
 

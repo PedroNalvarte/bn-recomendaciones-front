@@ -19,7 +19,7 @@ export default function ActionArea() {
             const base64File = reader.result; // Excel en base64
 
             localStorage.setItem("uploadedFile", base64File);
-            localStorage.setItem("userData", JSON.stringify(data));
+            localStorage.setItem("userData", JSON.stringify(data.data));
 
             window.location.href = "/working";
         };

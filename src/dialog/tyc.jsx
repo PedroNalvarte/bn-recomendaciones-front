@@ -13,7 +13,7 @@ export default function TyC() {
     return (
         <Dialog.Root open={open} onOpenChange={setOpen}>
             <Dialog.Trigger asChild>
-                <button className="bg-secondary my-6 px-14 rounded-lg text-texto2 font-medium cursor-pointer hover:scale-105 transition-transform duration-200"
+                <button className="bg-secondary my-6 px-14 rounded-lg text-bg font-medium cursor-pointer hover:scale-105 transition-transform duration-200"
                 >Términos y condiciones
                 </button>
             </Dialog.Trigger>

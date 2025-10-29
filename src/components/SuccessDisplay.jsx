@@ -38,11 +38,11 @@ const SuccessDisplay = () => {
     // --- Render Loading/Error States ---
     if (error) {
         return (
-            <div className="text-red-500 text-center mt-10 p-4">
+            <div className="text-red-400 text-center mt-10 p-4">
                 <p className="font-semibold text-lg">{error}</p>
                 <button
                     onClick={() => window.location.href = "/"}
-                    className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-300"
+                    className="mt-4 px-4 py-2 bg-primary text-white rounded hover:bg-secondary cursor-pointer transition duration-300"
                 >
                     Volver al Inicio
                 </button>

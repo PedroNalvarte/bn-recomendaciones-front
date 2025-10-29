@@ -67,8 +67,7 @@ const WorkingPage = () => {
                 sessionStorage.setItem("analysisResult", JSON.stringify(analysisData));
                 console.log("Resultados guardados en sessionStorage.");
 
-                console.log("Redirigiendo a /success...");
-                window.location.href = "/success"; // Adjust if your route is different
+                setTimeout(() => { window.location.href = "/success"; }, 5000);
 
             } catch (apiError) {
                 // --- ERROR ---
@@ -88,13 +87,18 @@ const WorkingPage = () => {
     return (
         <div className="flex flex-col items-center justify-center h-[88dvh] w-full text-center px-4">
             <Spinner />
-            <p className="mt-8 text-2xl text-gray-700">Datos recibidos con éxito</p>
+
 
             {/* Show error message if exists, otherwise show loading messages */}
             {error ? (
-                <p className="mt-4 text-xl text-red-500 font-semibold">{error}</p>
+                <p className="mt-4 text-xl text-red-400 font-medium">{error}</p>
             ) : (
-                <p className="mt-2 text-xl text-gray-500 animate-pulse">{messages[index]}</p>
+
+                <div>
+                    <p className="mt-8 text-2xl text-gray-700">Datos recibidos con éxito</p>
+                    <p className="mt-2 text-xl text-gray-500 animate-pulse">{messages[index]}</p>
+                </div>
+
             )}
 
             {/* Optional: Button to go back if there's an error */}
